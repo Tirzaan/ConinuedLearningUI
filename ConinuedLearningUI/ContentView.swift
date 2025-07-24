@@ -16,6 +16,7 @@ struct ContentView: View {
                 NavigationLink("2 - Magnification Gesture") { SwiftUIMagnificationGesture() }
                 NavigationLink("3 - Rotation Gesture") { SwiftUIRotationGesture() }
                 NavigationLink("4 - Drag Gesture") { SwiftUIDragGesture() }
+                NavigationLink("5 - Scroll View Reader:") { SwiftUIScrollViewReader() }
             }
             
             .navigationTitle("Lessons")
