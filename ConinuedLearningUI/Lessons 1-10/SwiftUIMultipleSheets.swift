@@ -17,7 +17,7 @@ struct RandomModel: Identifiable {
 // 2 - use multiple .sheets // Does not work any more
 // 3 - use $item
 
-/// Shows Multiple Sheets in one view
+/// Lesson 7 - Shows Multiple Sheets in one view
 struct SwiftUIMultipleSheets: View {
     
 //    @State var selectedModel: RandomModel = RandomModel(title: "Starting Title")

@@ -8,6 +8,7 @@
 
 import SwiftUI
 
+/// Lesson 8 - Shows the "Mask". cuts an object to the shape od an object behind the object
 struct SwiftUIMask: View {
     
     @State var rating: Int = 0
