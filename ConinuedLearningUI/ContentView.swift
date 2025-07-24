@@ -9,13 +9,16 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        NavigationStack {
+            List {
+                NavigationLink("1 - Long Press Gesture") { SwiftUILongPressGesture() }
+                NavigationLink("2 - Magnification Gesture") { SwiftUIMagnificationGesture() }
+                NavigationLink("3 - Rotation Gesture") { SwiftUIRotationGesture() }
+                NavigationLink("4 - Drag Gesture") { SwiftUIDragGesture() }
+            }
+            
+            .navigationTitle("Lessons")
         }
-        .padding()
     }
 }
 
