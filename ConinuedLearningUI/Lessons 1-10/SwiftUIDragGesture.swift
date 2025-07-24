@@ -9,8 +9,26 @@
 import SwiftUI
 
 struct SwiftUIDragGesture: View {
+    
+    @State var offset: CGSize = .zero
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        RoundedRectangle(cornerRadius: 20)
+            .frame(width: 100, height: 100)
+            .offset(offset)
+            .gesture(
+                DragGesture()
+                    .onChanged { value in
+                        withAnimation(.linear) {
+                            offset = value.translation
+                        }
+                    }
+                    .onEnded { value in
+                        withAnimation(.spring) {
+                            offset = .zero
+                        }
+                    }
+            )
     }
 }
 
