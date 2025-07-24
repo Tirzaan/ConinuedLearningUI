@@ -13,31 +13,41 @@ struct RandomModel: Identifiable {
     var title: String
 }
 
+// 1 - use binding
+// 2 - use multiple .sheets // Does not work any more
+// 3 - use $item
+
 struct SwiftUIMultipleSheets: View {
     
-    @State var selectedModel: RandomModel = RandomModel(title: "Starting Title")
-    @State var showSheet: Bool = false
+//    @State var selectedModel: RandomModel = RandomModel(title: "Starting Title")
+                                                           //NEEDED FOR "1 - use binding" *
+    @State var selectedModel: RandomModel? = nil
+//    @State var showSheet: Bool = false                  // NEEDED FOR "1 - use binding" *
     
     var body: some View {
-        VStack(spacing: 20) {
-            Button("Sheet 1") {
-                selectedModel = RandomModel(title: "1")
-                showSheet.toggle()
+        ScrollView(showsIndicators: false) {
+            VStack(spacing: 20) {
+                ForEach(0..<50) { index in
+                    Button("Sheet \(index)") {
+                        selectedModel = RandomModel(title: "Sheet #\(index)")
+ //                     showSheet.toggle()                // NEEDED FOR "1 - use binding" *
+                    }
+                }
             }
-            
-            Button("Sheet 2") {
-                selectedModel = RandomModel(title: "2")
-                showSheet.toggle()
+            .sheet(item: $selectedModel) { model in
+                SheetView(selectedModel: model)
             }
         }
-        .sheet(isPresented: $showSheet) {
-            SheetView(selectedModel: selectedModel)
-        }
+        .frame(maxWidth: .infinity)
+//        .sheet(isPresented: $showSheet) {               // NEEDED FOR "1 - use binding" *
+//            SheetView(selectedModel: selectedModel)
+//        }
     }
 }
 
 struct SheetView: View {
     
+//    @Binding var selectedModel: RandomModel             // NEEDED FOR "1 - use binding" *
     let selectedModel: RandomModel
     
     var body: some View {
