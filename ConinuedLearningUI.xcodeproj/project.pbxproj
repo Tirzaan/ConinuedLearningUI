@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXFileReference section */
-		990DB9382E325C0200D1C1D8 /* ConinuedLearningUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ConinuedLearningUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		990DB97E2E32650300D1C1D8 /* ConinuedLearningUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ConinuedLearningUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -33,16 +33,8 @@
 			isa = PBXGroup;
 			children = (
 				990DB93A2E325C0200D1C1D8 /* ConinuedLearningUI */,
-				990DB9392E325C0200D1C1D8 /* Products */,
+				990DB97E2E32650300D1C1D8 /* ConinuedLearningUI.app */,
 			);
-			sourceTree = "<group>";
-		};
-		990DB9392E325C0200D1C1D8 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				990DB9382E325C0200D1C1D8 /* ConinuedLearningUI.app */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -67,7 +59,7 @@
 			packageProductDependencies = (
 			);
 			productName = ConinuedLearningUI;
-			productReference = 990DB9382E325C0200D1C1D8 /* ConinuedLearningUI.app */;
+			productReference = 990DB97E2E32650300D1C1D8 /* ConinuedLearningUI.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -95,7 +87,7 @@
 			mainGroup = 990DB92F2E325C0200D1C1D8;
 			minimizedProjectReferenceProxies = 1;
 			preferredProjectObjectVersion = 77;
-			productRefGroup = 990DB9392E325C0200D1C1D8 /* Products */;
+			productRefGroup = 990DB92F2E325C0200D1C1D8;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
