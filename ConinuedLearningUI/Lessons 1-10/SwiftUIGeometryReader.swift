@@ -8,6 +8,7 @@
 
 import SwiftUI
 
+/// Lesson 6 - Shows "GeometryReader". Locates the postion, Rotation ect. of an object
 struct SwiftUIGeometryReader: View {
     @State var viewing1 = false
     @State var viewing2 = true
