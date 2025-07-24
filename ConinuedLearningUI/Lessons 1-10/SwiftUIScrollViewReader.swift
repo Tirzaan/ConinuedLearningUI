@@ -8,6 +8,7 @@
 
 import SwiftUI
 
+/// Lesson 5 - shows a ScrollView with a ScrollViewReader. Lets the app automaticlly Scroll
 struct SwiftUIScrollViewReader: View {
     
     @State var textFieldValue: String = ""
