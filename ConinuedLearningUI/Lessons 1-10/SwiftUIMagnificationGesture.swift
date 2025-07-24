@@ -8,6 +8,7 @@
 
 import SwiftUI
 
+/// Lesson 2 - shows "MagnificationGesture()". Lets the user ZOOM into an object
 struct SwiftUIMagnificationGesture: View {
     
     @State var currentAmount: CGFloat = 0

@@ -8,6 +8,7 @@
 
 import SwiftUI
 
+/// Lesson 4 - shows "DragGesture()". Lets the user DRAG an object
 struct SwiftUIDragGesture: View {
     
     @State var offset: CGSize = .zero

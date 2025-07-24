@@ -8,6 +8,7 @@
 
 import SwiftUI
 
+/// Lesson 3 - shows "RotationGesture()" Lets the user ROTATE an object
 struct SwiftUIRotationGesture: View {
     
     @State var angle: Angle = Angle(degrees: 0)

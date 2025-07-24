@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+/// Shows all the Lessons in a list as Nav links
 struct ContentView: View {
     var body: some View {
         NavigationStack {

@@ -8,6 +8,7 @@
 
 import SwiftUI
 
+/// Lesson 1 - shows ".onLongPressGesture". Lets the user tap on something for a duration than does something
 struct SwiftUILongPressGesture: View {
     
     @State var isComplete: Bool = false
