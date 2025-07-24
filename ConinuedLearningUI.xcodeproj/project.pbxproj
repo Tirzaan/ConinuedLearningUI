@@ -16,6 +16,11 @@
 			path = ConinuedLearningUI;
 			sourceTree = "<group>";
 		};
+		990DB99F2E32E0CD00D1C1D8 /* Sounds */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Sounds;
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +38,7 @@
 			isa = PBXGroup;
 			children = (
 				990DB93A2E325C0200D1C1D8 /* ConinuedLearningUI */,
+				990DB99F2E32E0CD00D1C1D8 /* Sounds */,
 			);
 			sourceTree = "<group>";
 		};
@@ -53,6 +59,7 @@
 			);
 			fileSystemSynchronizedGroups = (
 				990DB93A2E325C0200D1C1D8 /* ConinuedLearningUI */,
+				990DB99F2E32E0CD00D1C1D8 /* Sounds */,
 			);
 			name = ConinuedLearningUI;
 			packageProductDependencies = (
