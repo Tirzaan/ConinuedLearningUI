@@ -11,7 +11,7 @@ import SwiftUI
 struct ConinuedLearningUIApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            SwiftUIMagnificationGesture()
         }
     }
 }

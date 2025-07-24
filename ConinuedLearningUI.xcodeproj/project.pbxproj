@@ -7,13 +7,18 @@
 	objects = {
 
 /* Begin PBXFileReference section */
-		990DB97E2E32650300D1C1D8 /* ConinuedLearningUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ConinuedLearningUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		990DB98D2E3266CC00D1C1D8 /* ConinuedLearningUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ConinuedLearningUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		990DB93A2E325C0200D1C1D8 /* ConinuedLearningUI */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = ConinuedLearningUI;
+			sourceTree = "<group>";
+		};
+		990DB98A2E32669D00D1C1D8 /* Extra */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Extra;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -33,7 +38,8 @@
 			isa = PBXGroup;
 			children = (
 				990DB93A2E325C0200D1C1D8 /* ConinuedLearningUI */,
-				990DB97E2E32650300D1C1D8 /* ConinuedLearningUI.app */,
+				990DB98A2E32669D00D1C1D8 /* Extra */,
+				990DB98D2E3266CC00D1C1D8 /* ConinuedLearningUI.app */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,12 +60,13 @@
 			);
 			fileSystemSynchronizedGroups = (
 				990DB93A2E325C0200D1C1D8 /* ConinuedLearningUI */,
+				990DB98A2E32669D00D1C1D8 /* Extra */,
 			);
 			name = ConinuedLearningUI;
 			packageProductDependencies = (
 			);
 			productName = ConinuedLearningUI;
-			productReference = 990DB97E2E32650300D1C1D8 /* ConinuedLearningUI.app */;
+			productReference = 990DB98D2E3266CC00D1C1D8 /* ConinuedLearningUI.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -248,6 +255,7 @@
 				DEVELOPMENT_TEAM = ZF8P9WP3C5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Continued Learning UI";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -276,6 +284,7 @@
 				DEVELOPMENT_TEAM = ZF8P9WP3C5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Continued Learning UI";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
