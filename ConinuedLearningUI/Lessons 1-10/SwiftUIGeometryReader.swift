@@ -9,13 +9,35 @@
 import SwiftUI
 
 struct SwiftUIGeometryReader: View {
-    @State var viewing1 = true
-    @State var viewing2 = false
+    @State var viewing1 = false
+    @State var viewing2 = true
+    
+    
+    func getPercentage(geometry: GeometryProxy) -> Double {
+        let maxDistance = geometry.size.width / 2
+        let currentX = geometry.frame(in: .global).minX
+        return Double(1 - (currentX / maxDistance))
+    }
     
     var body: some View {
         ZStack {
             if viewing2 {
-                
+                ScrollView(.horizontal, showsIndicators: false) {
+                    HStack {
+                        ForEach(0..<20) { index in
+                            GeometryReader { geometry in
+                                RoundedRectangle(cornerRadius: 20)
+                                    .rotation3DEffect(
+                                        Angle(degrees: getPercentage(geometry: geometry) * 40),
+                                        axis: (x: 0.0, y: 1.0, z: 0.0))
+                            }
+                            .frame(width: 300, height: 250)
+                            .shadow(color: .gray, radius: 10)
+                            .padding()
+                            .frame(maxHeight: .infinity)
+                        }
+                    }
+                }
             }
             
             if viewing1 {
@@ -42,7 +64,7 @@ struct SwiftUIGeometryReader: View {
                         viewing2 = true
                     }
                 }
-                .tint(.white)
+                .tint(.black)
                 Spacer()
             }
         }
