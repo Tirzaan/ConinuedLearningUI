@@ -19,6 +19,7 @@ struct ContentView: View {
                 NavigationLink("5 - Scroll View Reader") { SwiftUIScrollViewReader() }
                 NavigationLink("6 - Geometry Reader") { SwiftUIGeometryReader() }
                 NavigationLink("7 - Multiple Sheets") { SwiftUIMultipleSheets() }
+                NavigationLink("8 - Mask") { SwiftUIMask() }
             }
             
             .navigationTitle("Lessons")
