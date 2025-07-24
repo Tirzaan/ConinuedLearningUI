@@ -34,6 +34,7 @@ class SoundManager {
     }
 }
 
+/// Shows Buttons that play sounds using the SoundManager
 struct SwiftUISoundEffects: View {
     var body: some View {
         VStack(spacing: 40) {
