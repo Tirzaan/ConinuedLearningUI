@@ -7,18 +7,13 @@
 	objects = {
 
 /* Begin PBXFileReference section */
-		990DB98D2E3266CC00D1C1D8 /* ConinuedLearningUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ConinuedLearningUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		990DB98D2E3266CC00D1C1D8 /* ConinuedLearningUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = ConinuedLearningUI.app; path = "/Users/tirzaan/XCode/Projects/Swiftful Thinking Playlist Classes/ConinuedLearningUI/build/Debug-iphoneos/ConinuedLearningUI.app"; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		990DB93A2E325C0200D1C1D8 /* ConinuedLearningUI */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = ConinuedLearningUI;
-			sourceTree = "<group>";
-		};
-		990DB98A2E32669D00D1C1D8 /* Extra */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = Extra;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -38,8 +33,6 @@
 			isa = PBXGroup;
 			children = (
 				990DB93A2E325C0200D1C1D8 /* ConinuedLearningUI */,
-				990DB98A2E32669D00D1C1D8 /* Extra */,
-				990DB98D2E3266CC00D1C1D8 /* ConinuedLearningUI.app */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,7 +53,6 @@
 			);
 			fileSystemSynchronizedGroups = (
 				990DB93A2E325C0200D1C1D8 /* ConinuedLearningUI */,
-				990DB98A2E32669D00D1C1D8 /* Extra */,
 			);
 			name = ConinuedLearningUI;
 			packageProductDependencies = (
