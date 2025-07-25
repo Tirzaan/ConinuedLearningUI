@@ -10,10 +10,12 @@ import SwiftUI
 import UserNotifications
 import CoreLocation
 
+/// Manager for all Notifications
 class NotificationManager {
     
     static let instance = NotificationManager() //Singleton
     
+    /// Requests authorization to send the user notifications
     func requestAuthorization() {
         let options: UNAuthorizationOptions = [.alert, .badge, .sound]
         UNUserNotificationCenter.current().requestAuthorization(options: options) { success, error in
@@ -25,6 +27,7 @@ class NotificationManager {
         }
     }
     
+    /// Schedules a notification to send to the user
     func scheduleNotification() {
         
         let content = UNMutableNotificationContent()
@@ -67,6 +70,7 @@ class NotificationManager {
         UNUserNotificationCenter.current().add(request)
     }
     
+    /// Cancels all pending notifications
     func cancelNotifications() {
         UNUserNotificationCenter.current().removeAllPendingNotificationRequests()
     }
@@ -74,6 +78,7 @@ class NotificationManager {
     
 }
 
+/// Shows Buttons to Request Permission, Schedule a Notification, and Cancel all Notifications
 struct SwiftUILocalNotifications: View {
     var body: some View {
         VStack(spacing: 40) {
