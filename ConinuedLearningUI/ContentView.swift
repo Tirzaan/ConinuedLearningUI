@@ -21,6 +21,7 @@ struct ContentView: View {
                 NavigationLink("7 - Multiple Sheets") { SwiftUIMultipleSheets() }
                 NavigationLink("8 - Mask") { SwiftUIMask() }
                 NavigationLink("9 - Sound Effects") { SwiftUISoundEffects() }
+                NavigationLink("10 - Haptics") { SwiftUIHaptics() }
             }
             
             .navigationTitle("Lessons")
