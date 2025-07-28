@@ -24,7 +24,7 @@ struct ContentView: View {
                 NavigationLink("10 - Haptics") { SwiftUIHaptics() }
                 NavigationLink("11 - Local Notifications") { SwiftUILocalNotifications() }
                 NavigationLink("12 - Hashable") { SwiftUIHashable() }
-                NavigationLink("13 - Nothing") { ZStack {Color.red.ignoresSafeArea(); Text("Lesson not watched yet")} }
+                NavigationLink("13 - Arrays") { SwiftUIArrays() }
                 NavigationLink("14 - Nothing") { ZStack {Color.red.ignoresSafeArea(); Text("Lesson not watched yet")} }
                 NavigationLink("15 - Nothing") { ZStack {Color.red.ignoresSafeArea(); Text("Lesson not watched yet")} }
                 NavigationLink("16 - Nothing") { ZStack {Color.red.ignoresSafeArea(); Text("Lesson not watched yet")} }
