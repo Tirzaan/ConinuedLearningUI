@@ -1,3 +1,4 @@
+// Lesson 14
 //
 //  SwiftUICoreData.swift
 //  ConinuedLearningUI
@@ -28,7 +29,7 @@ struct SwiftUICoreData: View {
     @StateObject var viewModel = CoreDataViewModel()
     
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Text("Hello, World!")
     }
 }
 
