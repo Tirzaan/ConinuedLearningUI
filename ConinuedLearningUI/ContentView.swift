@@ -27,7 +27,7 @@ struct ContentView: View {
                 NavigationLink("13 - Arrays") { SwiftUIArrays() }
                 NavigationLink("14 - CoreData") { SwiftUICoreData() }
                 NavigationLink("15 - Threads") { SwiftUIThreads() }
-                NavigationLink("16 - Nothing") { ZStack {Color.red.ignoresSafeArea(); Text("Lesson not watched yet")} }
+                NavigationLink("16 - Weak Self") { SwiftUIWeakSelf() }
                 NavigationLink("17 - Nothing") { ZStack {Color.red.ignoresSafeArea(); Text("Lesson not watched yet")} }
                 NavigationLink("18 - Nothing") { ZStack {Color.red.ignoresSafeArea(); Text("Lesson not watched yet")} }
                 NavigationLink("19 - Nothing") { ZStack {Color.red.ignoresSafeArea(); Text("Lesson not watched yet")} }
