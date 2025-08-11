@@ -31,7 +31,7 @@ struct ContentView: View {
                 NavigationLink("17 - Type Alias") { SwiftUITypeAlias() }
                 NavigationLink("18 - Escaping") { SwiftUIEscaping() }
                 NavigationLink("19 - Codable") { SwiftUICodable() }
-                NavigationLink("20 - Nothing") { ZStack {Color.red.ignoresSafeArea(); Text("Lesson not watched yet")} }
+                NavigationLink("20 - Download With Escaping") { SwiftUIDownloadWithEscaping() }
                 NavigationLink("21 - Nothing") { ZStack {Color.red.ignoresSafeArea(); Text("Lesson not watched yet")} }
                 NavigationLink("22 - Nothing") { ZStack {Color.red.ignoresSafeArea(); Text("Lesson not watched yet")} }
                 NavigationLink("23 - Nothing") { ZStack {Color.red.ignoresSafeArea(); Text("Lesson not watched yet")} }
