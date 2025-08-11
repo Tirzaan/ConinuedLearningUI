@@ -33,7 +33,7 @@ struct ContentView: View {
                 NavigationLink("19 - Codable") { SwiftUICodable() }
                 NavigationLink("20 - Download With Escaping") { SwiftUIDownloadWithEscaping() }
                 NavigationLink("21 - Download With Combine") { SwiftUIDownloadWithCombine() }
-                NavigationLink("22 - Nothing") { ZStack {Color.red.ignoresSafeArea(); Text("Lesson not watched yet")} }
+                NavigationLink("22 - Timer") { SwiftUITimer() }
                 NavigationLink("23 - Nothing") { ZStack {Color.red.ignoresSafeArea(); Text("Lesson not watched yet")} }
                 NavigationLink("24 - Nothing") { ZStack {Color.red.ignoresSafeArea(); Text("Lesson not watched yet")} }
                 NavigationLink("25 - Nothing") { ZStack {Color.red.ignoresSafeArea(); Text("Lesson not watched yet")} }
