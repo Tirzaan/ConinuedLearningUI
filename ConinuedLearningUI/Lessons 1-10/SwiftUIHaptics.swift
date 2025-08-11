@@ -24,6 +24,7 @@ class HapticManager {
     
 }
 
+/// Lesson 9 - Shows Buttons that send "Haptics" (Vibrations) to the device
 struct SwiftUIHaptics: View {
     var body: some View {
         VStack(spacing: 20) {

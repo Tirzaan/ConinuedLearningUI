@@ -66,6 +66,7 @@ class CoreDataViewModel: ObservableObject {
     
 }
 
+/// Lesson 14 - Shows "Core Data" to save data in a cusomizable way
 struct SwiftUICoreData: View {
     
     @StateObject var viewModel = CoreDataViewModel()

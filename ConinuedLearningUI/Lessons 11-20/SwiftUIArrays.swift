@@ -109,6 +109,7 @@ class ArrayModificationViewModel: ObservableObject {
     
 }
 
+///Lesson 13 - Shows different things you can do with arrays like sort, filter, and map
 struct SwiftUIArrays: View {
     
     @StateObject var viewModel = ArrayModificationViewModel()

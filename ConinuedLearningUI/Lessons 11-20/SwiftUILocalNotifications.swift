@@ -78,7 +78,7 @@ class NotificationManager {
     
 }
 
-/// Shows Buttons to Request Permission, Schedule a Notification, and Cancel all Notifications
+/// Lesson 11 - Shows Buttons to Request Permission, Schedule a Notification, and Cancel all Notifications
 struct SwiftUILocalNotifications: View {
     var body: some View {
         VStack(spacing: 40) {

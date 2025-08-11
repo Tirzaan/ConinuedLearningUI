@@ -40,6 +40,7 @@ class ThreadsViewModel: ObservableObject {
     
 }
 
+///Lesson 15 - Shows different "Theads" to have things load more smoothally
 struct SwiftUIThreads: View {
     
     @StateObject var viewModel = ThreadsViewModel()

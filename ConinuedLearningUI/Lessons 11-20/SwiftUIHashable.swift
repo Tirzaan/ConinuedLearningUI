@@ -17,7 +17,7 @@ struct MyCustomModel: Hashable {
     
 }
 
-///Shows Hashables that you can put into a ForEach
+///Lesson 12 - Shows Hashables that you can put into a ForEach
 struct SwiftUIHashable: View {
     
     let data: [MyCustomModel] = [
