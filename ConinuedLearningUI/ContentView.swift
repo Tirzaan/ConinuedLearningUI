@@ -30,7 +30,7 @@ struct ContentView: View {
                 NavigationLink("16 - Weak Self") { SwiftUIWeakSelf() }
                 NavigationLink("17 - Type Alias") { SwiftUITypeAlias() }
                 NavigationLink("18 - Escaping") { SwiftUIEscaping() }
-                NavigationLink("19 - Nothing") { ZStack {Color.red.ignoresSafeArea(); Text("Lesson not watched yet")} }
+                NavigationLink("19 - Codable") { SwiftUICodable() }
                 NavigationLink("20 - Nothing") { ZStack {Color.red.ignoresSafeArea(); Text("Lesson not watched yet")} }
                 NavigationLink("21 - Nothing") { ZStack {Color.red.ignoresSafeArea(); Text("Lesson not watched yet")} }
                 NavigationLink("22 - Nothing") { ZStack {Color.red.ignoresSafeArea(); Text("Lesson not watched yet")} }
