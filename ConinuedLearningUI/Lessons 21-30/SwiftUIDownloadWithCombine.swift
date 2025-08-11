@@ -49,25 +49,39 @@ class DownloadWithCombineViewModel: ObservableObject {
         */
         
         URLSession.shared.dataTaskPublisher(for: url)
-            .subscribe(on: DispatchQueue.global(qos: .background))
+            //.subscribe(on: DispatchQueue.global(qos: .background))
             .receive(on: DispatchQueue.main)
-            .tryMap { (data, response) -> Data in
-                guard
-                    let response = response as? HTTPURLResponse,
-                    response.statusCode >= 200 && response.statusCode < 300 else {
-                    throw URLError(.badServerResponse)
-                }
-                return data
-            }
+            .tryMap(handleOutput)
             .decode(type: [postModelCombine].self, decoder: JSONDecoder())
-            .sink { (completion) in
-                print("Completion: \(completion)")
-            } receiveValue: { [weak self] (returnedPosts) in
+            .replaceError(with: [])
+            .sink(receiveValue: { [weak self] (returnedPosts) in
                 self?.posts = returnedPosts
-            }
+            })
             .store(in: &cancellables)
-
         
+        // Can replace .sink with:
+        /*
+//            .sink { (completion) in
+//                switch completion {
+//                case .finished:
+//                    print("Finished")
+//                case .failure(let Error):
+//                    print("Error: \(Error)")
+//                }
+//            } receiveValue: { [weak self] (returnedPosts) in
+//                self?.posts = returnedPosts
+//            }
+         */
+
+    }
+    
+    func handleOutput(output: URLSession.DataTaskPublisher.Output) throws -> Data {
+        guard
+            let response = output.response as? HTTPURLResponse,
+            response.statusCode >= 200 && response.statusCode < 300 else {
+            throw URLError(.badServerResponse)
+        }
+        return output.data
     }
     
 }
