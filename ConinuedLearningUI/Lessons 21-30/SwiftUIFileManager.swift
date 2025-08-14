@@ -8,6 +8,7 @@
 
 import SwiftUI
 
+/// Lesson 24 - Shows how to save data in files
 struct SwiftUIFileManager: View {
     var body: some View {
         Text("Hello, World!")

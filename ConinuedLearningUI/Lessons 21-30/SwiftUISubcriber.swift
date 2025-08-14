@@ -9,6 +9,7 @@
 import SwiftUI
 import Combine
 
+/// Lesson 23 - Shows how to use Publishers and Subcribers in a view model
 class SubcriberViewModel: ObservableObject {
     
     @Published var count: Int = 0
