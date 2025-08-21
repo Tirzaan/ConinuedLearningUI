@@ -40,7 +40,7 @@ struct ContentView: View {
                 NavigationLink("26 - Downloading Images") { SwiftUIDownloadingImages() }
                 NavigationLink("27 - Accessibility Text") { SwiftUIAccessibilityText() }
                 NavigationLink("28 - Accessibility Colors") { SwiftUIAccessibilityColors() }
-                NavigationLink("29 - Nothing") { ZStack {Color.red.ignoresSafeArea(); Text("Lesson not watched yet")} }
+                NavigationLink("29 - Accessibility Voice Over") { SwiftUIAccessibilityVoiceOver() }
                 NavigationLink("30 - Nothing") { ZStack {Color.red.ignoresSafeArea(); Text("Lesson not watched yet")} }
                 NavigationLink("31 - Nothing") { ZStack {Color.red.ignoresSafeArea(); Text("Lesson not watched yet")} }
                 NavigationLink("32 - Nothing") { ZStack {Color.red.ignoresSafeArea(); Text("Lesson not watched yet")} }
