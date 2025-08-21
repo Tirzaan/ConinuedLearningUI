@@ -38,7 +38,7 @@ struct ContentView: View {
                 NavigationLink("24 - File Manager") { SwiftUIFileManager() }
                 NavigationLink("25 - Cache") { SwiftUICache() }
                 NavigationLink("26 - Downloading Images") { SwiftUIDownloadingImages() }
-                NavigationLink("27 - Nothing") { ZStack {Color.red.ignoresSafeArea(); Text("Lesson not watched yet")} }
+                NavigationLink("27 - Accessibility Text") { SwiftUIAccessibilityText() }
                 NavigationLink("28 - Nothing") { ZStack {Color.red.ignoresSafeArea(); Text("Lesson not watched yet")} }
                 NavigationLink("29 - Nothing") { ZStack {Color.red.ignoresSafeArea(); Text("Lesson not watched yet")} }
                 NavigationLink("30 - Nothing") { ZStack {Color.red.ignoresSafeArea(); Text("Lesson not watched yet")} }
