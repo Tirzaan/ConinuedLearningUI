@@ -8,8 +8,20 @@
 import SwiftUI
 
 struct SwiftUIDownloadingImages: View {
+    
+    @StateObject var viewModel = DownloadingImagesViewModel()
+    
     var body: some View {
-        Text("Hello, World!")
+        NavigationStack {
+            List {
+                ForEach(viewModel.dataArray) { model in
+                    SwiftUIDownloadingImagesRow(model: model)
+                }
+            }
+            .listStyle(.plain)
+            
+            .navigationTitle("Downloading Images")
+        }
     }
 }
 
