@@ -43,7 +43,7 @@ struct ContentView: View {
                 NavigationLink("29 - Accessibility Voice Over") { SwiftUIAccessibilityVoiceOver() }
                 NavigationLink("30 - Alignment Guide") { SwiftUIAlignmentGuide() }
                 NavigationLink("31 - Visual Effect") { SwiftUIVisualEffect() }
-                NavigationLink("32 - Nothing") { ZStack {Color.red.ignoresSafeArea(); Text("Lesson not watched yet")} }
+                NavigationLink("32 - Scroll View Paging") { SwiftUIScrollViewPaging() }
             }
             
             .navigationTitle("Lessons")
